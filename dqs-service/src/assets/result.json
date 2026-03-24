@@ -1,0 +1,17 @@
+[
+  {"dimension":"Believability","result":60},
+  {"dimension":"Value-added","result":80},
+  {"dimension":"Relevancy","result":50},
+  {"dimension":"Accuracy","result":90},
+  {"dimension":"Interpretability","result":80},
+  {"dimension":"Ease of understanding","result":75},
+  {"dimension":"Accessibility","result":90},
+  {"dimension":"Objectivity","result":50},
+  {"dimension":"Timeliness","result":60},
+  {"dimension":"Completeness","result":100},
+  {"dimension":"Reputation","result":80},
+  {"dimension":"Representational consistency","result":60},
+  {"dimension":"Concise representation","result":100},
+  {"dimension":"Access security","result":60},
+  {"dimension":"Amount of data","result":70}
+]
