@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .header {
@@ -42,7 +42,7 @@ body {
 }
 
 .controls label {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
 }
 
@@ -58,10 +58,11 @@ body {
   color: white;
   border: none;
   padding: 10px 25px;
-  font-size: 16px;
+  font-size: 20px;
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.2s;
+  width: 150px;
 }
 
 .controls button:hover {
@@ -69,7 +70,7 @@ body {
 }
 
 #repo {
-  width: 220px;
+  width: 250px;
 }
 
 .table-container {
@@ -82,7 +83,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   background: white;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 th {
@@ -90,7 +91,7 @@ th {
   color: white;
   text-align: left;
   padding: 12px;
-  font-size: 16px;
+  font-size: 22px;
 }
 
 td {
@@ -107,5 +108,5 @@ tr:nth-child(odd) {
 
 .result {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 22px;
 }
