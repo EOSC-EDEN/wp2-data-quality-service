@@ -68,6 +68,10 @@ body {
   background-color: #244fa3;
 }
 
+#repo {
+  width: 220px;
+}
+
 .table-container {
   padding: 20px;
   max-width: 1000px;

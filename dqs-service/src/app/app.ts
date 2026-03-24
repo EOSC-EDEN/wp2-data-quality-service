@@ -25,9 +25,8 @@ import { DataService } from './data';
 })
 export class App {
   title = signal('EDEN Data Quality Service');
-
-  selectedRepo: string | null = null;
-  repositories: any[] = [];
+  repositories = signal<any[]>([]);
+  selectedRepo = signal<string | null>(null);
   results = signal<{ category: string; dimension: string; result?: number }[]>([]);
   loading = signal(false);
 
@@ -36,11 +35,11 @@ export class App {
     this.initResults();
   }
 
-  loadRepositories() {
-    this.dataService.getRepositories().subscribe((repos) => {
-      this.repositories = repos;
-    });
-  }
+loadRepositories() {
+  this.dataService.getRepositories().subscribe((repos) => {
+    this.repositories.set(repos);
+  });
+}
 
 
   initResults() {

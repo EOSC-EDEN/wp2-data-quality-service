@@ -5,10 +5,13 @@
 
 <div class="controls">
   <label for="repo">Repository:</label>
-  <select id="repo" [(ngModel)]="selectedRepo">
-    <option *ngFor="let repo of repositories" [value]="repo.name">{{ repo.name }}</option>
+  <select id="repo" [(ngModel)]="selectedRepo" style="width: 220px;">
+    <option *ngFor="let repo of repositories()" [value]="repo.name">
+      {{ repo.name }}
+    </option>
   </select>
-  <button (click)="run()">Run</button>
+
+  <button (click)="run()" [disabled]="!selectedRepo()">Run</button>
 </div>
 
 <div *ngIf="loading()" style="margin-top:20px; text-align:center;">
