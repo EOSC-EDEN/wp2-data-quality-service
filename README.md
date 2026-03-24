@@ -1,3 +1,5 @@
+#EDEN Data Quality Service 
+
 ## References
 
 1. EOSC Interoperability Framework: Guidelines for semantic and technical interoperability in the European Open Science Cloud.
