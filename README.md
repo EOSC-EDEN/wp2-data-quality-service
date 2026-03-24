@@ -28,7 +28,7 @@ These additional dimensions have to follow a common output format to ensure cons
 
 From the perspective of higher-level components (e.g., Tier 0), all reported results are treated as a single set of metrics, without distinguishing between Level 1 and Level 2. 
 
-[](./images/concept.png)
+[concept](./images/concept.png)
 
 ## Scope
 
@@ -57,12 +57,12 @@ From the perspective of higher-level components (e.g., Tier 0), all reported res
 This page appears as the main page. The main purpose is to select a repository to assess from all related repositories using the dropdown list in the center of the page. After selecting a repository, the user can click Run to start the assessment process for the chosen repository.
 
 
-[](./images/mock1.png)
+[main page](./images/mock1.png)
 
 
 After clicking Run for the selected repository, a full table with all metrics measured for that repository is displayed.
 
-[](./images/mock2.png)
+[results](./images/mock2.png)
 
 ## Conformance
 The keywords MUST, MUST NOT, SHOULD, SHOULD NOT, and MAY are to be interpreted as described in RFC 2119 (https://www.rfc-editor.org/rfc/rfc2119).
@@ -118,7 +118,7 @@ The FoodCASE application has access to data from FoodScience and features its ow
 
 FoodCASE acts as a typical Tier 1, where the repository determines how to measure data quality dimensions, while Tier 0 receives the results in a standardized format.
 
-[](./images/foodCASE.png)
+[foodCASE](./images/foodCASE.png)
 
 ## Integration Process
 
