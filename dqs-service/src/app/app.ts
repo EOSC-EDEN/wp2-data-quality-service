@@ -1,6 +1,6 @@
 import { Component, signal } from '@angular/core';
-import { NgIf, NgFor, NgStyle } from '@angular/common';  // *ngIf, *ngFor, [ngStyle]
-import { FormsModule } from '@angular/forms';           // ngModel
+import { NgIf, NgFor, NgStyle } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzButtonModule } from 'ng-zorro-antd/button';
@@ -14,7 +14,7 @@ import { DataService } from './data';
     FormsModule,
     NgIf,
     NgFor,
-    NgStyle,         // <-- konieczne dla [ngStyle]
+    NgStyle,
     NzSelectModule,
     NzTableModule,
     NzButtonModule,
@@ -67,11 +67,17 @@ export class App {
 run() {
   if (!this.selectedRepo || this.loading()) return;
 
-  this.loading.set(true); // 🔥 tylko tak dla signal
+  this.loading.set(true);
 
   this.dataService.runCheck().subscribe({
     next: (data) => {
-      const resultMap = new Map(data.map(d => [d.dimension, d.result]));
+    const resultMap = new Map(data.map(d => {
+    const variation = (Math.random() * 0.2) - 0.1;
+    let newResult = d.result * (1 + variation);
+    newResult = Math.max(0, Math.min(100, newResult)); 
+    return [d.dimension, Math.floor(newResult)];
+  })
+  );
 
       this.results.set(
         this.results().map(r => ({
@@ -91,8 +97,8 @@ run() {
 
   getColor(value?: number) {
     if (value == null) return '';
-    if (value < 60) return '#d9534f';
-    if (value <= 80) return '#f0ad4e';
+    if (value < 50) return '#d9534f';
+    if (value <= 75) return '#f0ad4e';
     return '#5cb85c';
   }
 }

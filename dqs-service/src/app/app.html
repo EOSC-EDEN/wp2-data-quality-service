@@ -1,10 +1,8 @@
-<!-- HEADER -->
 <div class="header">
-  <div class="logo-placeholder"></div>
-  <div class="title">EDEN Data Quality Service</div>
+  <img src="assets/logo.png" style="width:180px; height:30px;">
+  <div class="title">Data Quality Service</div>
 </div>
 
-<!-- CONTROLS -->
 <div class="controls">
   <label for="repo">Repository:</label>
   <select id="repo" [(ngModel)]="selectedRepo">
@@ -13,12 +11,10 @@
   <button (click)="run()">Run</button>
 </div>
 
-<!-- LOADING -->
 <div *ngIf="loading()" style="margin-top:20px; text-align:center;">
   Loading results...
 </div>
 
-<!-- TABLE -->
 <div class="table-container">
   <table *ngIf="!loading()">
     <thead>

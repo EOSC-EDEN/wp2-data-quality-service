@@ -2,77 +2,95 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
+  font-size: 16px;
 }
 
-/* HEADER */
 .header {
-  background-color: #7fb3c9;
-  padding: 10px 20px;
+  background-color: #90daff;
+  padding: 15px 30px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 }
 
-.logo-placeholder {
-  width: 40px;
-  height: 40px;
-  background-color: #ccc;
-  border-radius: 5px;
+.logo {
+  width: 180px;
+  height: 50px;
+  background-image: url('/assets/logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
 }
 
 .title {
-  font-size: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.controls {
+  background: #ddd;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 8px;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.controls label {
+  font-size: 18px;
   font-weight: bold;
 }
 
-/* CONTROLS */
-.controls {
-  background: #ddd;
-  padding: 15px 20px;
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-select {
-  padding: 5px 10px;
+.controls select {
+  padding: 8px 12px;
+  font-size: 16px;
   border-radius: 5px;
   border: 1px solid #aaa;
 }
 
-button {
-  background-color: #2f65c8;
+.controls button {
+  background-color: #1e63d6;
   color: white;
   border: none;
-  padding: 8px 20px;
+  padding: 10px 25px;
+  font-size: 16px;
   border-radius: 6px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
-button:hover {
+.controls button:hover {
   background-color: #244fa3;
 }
 
-/* TABLE */
 .table-container {
   padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   background: white;
+  font-size: 16px;
 }
 
 th {
   background-color: #2f65c8;
   color: white;
   text-align: left;
-  padding: 10px;
+  padding: 12px;
+  font-size: 16px;
 }
 
 td {
-  padding: 10px;
+  padding: 12px;
 }
 
 tr:nth-child(even) {
@@ -85,4 +103,5 @@ tr:nth-child(odd) {
 
 .result {
   font-weight: bold;
+  font-size: 16px;
 }
