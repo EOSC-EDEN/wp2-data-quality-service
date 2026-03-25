@@ -1,3 +1,5 @@
+# EDEN Data Quality Service 
+
 ## References
 
 1. EOSC Interoperability Framework: Guidelines for semantic and technical interoperability in the European Open Science Cloud.
@@ -157,4 +159,8 @@ FoodCASE acts as a typical Tier 1, where the repository determines how to measur
 
 2. IETF RFC 2119: Key words for use in RFCs to indicate requirement levels.
 
+<<<<<<< HEAD
 3. CPP-019 – Data Quality Assessment: [link](https://github.com/EOSC-EDEN/wp1-cpp-descriptions/blob/main/CPP-019/EOSC-EDEN_CPP-019_Data_Quality_Assessment.pdf)
+=======
+3. CPP-019 – Data Quality Assessment: [link](https://github.com/EOSC-EDEN/wp1-cpp-descriptions/blob/main/CPP-019/EOSC-EDEN_CPP-019_Data_Quality_Assessment.pdf)
+>>>>>>> 35ea10af2118b481a57571c9a9931aee6597bf68
