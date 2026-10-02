@@ -8,7 +8,7 @@ checks, according to a predefined set of data quality indicators (provided by WP
 enables Trusted Digital Archives (TDA) or repositories (TDR) to; monitor data quality; support decisions regarding
 long-term preservation and reuse; and ensure consistency and interoperability of research data over time.
 
-![img.png](docs/assets/dqcs_overview.png)
+![img.png](assets/dqcs_overview.png)
 
 Fig. 1. Overview of how the DQCS Portal connects and works with TDAs or TDRs.
 
